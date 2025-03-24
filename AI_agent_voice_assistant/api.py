@@ -1,17 +1,34 @@
 from flask import Flask, request, jsonify
+from db import orders_db
 
 app = Flask(__name__)
 
 
 @app.route("/orders", methods=["POST"])
 def get_orders():
-    return jsonify(
-        {
-            "order_number": "1",
-            "customer_name": "John Doe",
-            "order_date": "2021-01-01",
-            "total_amount": 100.00,
-            "status": "pending",
-            "shipping_adress": "123 Main St, New York, NY 10001",
-        }
-    )
+    data = request.get_json()
+    if data is None:
+        return jsonify({"error": "Invalid JSON"}), 400
+
+    if "orderNumber" not in data:
+        return jsonify({"error": "Missing orderNumber"}), 400
+
+    order_number = data["orderNumber"]
+    if order_number in orders_db:
+        order = orders_db.get(order_number)
+
+        return jsonify(
+            {
+                "order_number": order.order_number,
+                "customer_name": order.customer_name,
+                "order_date": order.order_date,
+                "total_amount": order.total_amount,
+                "status": order.status,
+                "shipping_adress": order.shipping_address,
+            }
+        )
+    return jsonify({"error": "Order not found"}), 404
+
+
+if __name__ == "__main__":
+    app.run(debug=True)
