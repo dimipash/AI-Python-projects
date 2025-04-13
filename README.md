@@ -31,10 +31,13 @@ Below is a brief overview of the projects included in this repository:
 *   **Description:** A general-purpose AI voice assistant application. It includes a backend for real-time audio processing, speech-to-text, and natural language understanding (using OpenAI), and a frontend for user interaction.
 *   **Key Technologies:** Python, Flask (Backend), OpenAI API, React, Vite (Frontend).
 
+### 6. Custom MCP Server (`custom_mcp_server/`)
+
+*   **Description:** A custom Model Context Protocol (MCP) server demonstrating how to extend the agent's capabilities with new tools and resources. This project provides a template and example for creating your own MCP servers to integrate with the AI agent framework.
+*   **Key Technologies:** Python, FastAPI, MCP.
+
 ## Getting Started
 
 Each project directory contains its own `README.md` file (or relevant setup information in its code) with specific instructions for setup, dependencies, and usage. Please refer to the individual project directories for more details.
 
-## Contribution
 
-Contributions, issues, and feature requests are welcome. Feel free to check [issues page](link-to-issues-page) if you want to contribute.
