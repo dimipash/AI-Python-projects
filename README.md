@@ -36,8 +36,11 @@ Below is a brief overview of the projects included in this repository:
 *   **Description:** A custom Model Context Protocol (MCP) server demonstrating how to extend the agent's capabilities with new tools and resources. This project provides a template and example for creating your own MCP servers to integrate with the AI agent framework.
 *   **Key Technologies:** Python, FastAPI, MCP.
 
+### 7. Langgraph Agent (`langgraph_agent/`)
+
+*   **Description:** An AI agent project utilizing Langgraph to build stateful, multi-actor applications with large language models.
+*   **Key Technologies:** Python, Langgraph, LangChain.
+
 ## Getting Started
 
 Each project directory contains its own `README.md` file (or relevant setup information in its code) with specific instructions for setup, dependencies, and usage. Please refer to the individual project directories for more details.
-
-
