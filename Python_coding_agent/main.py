@@ -53,7 +53,9 @@ def main():
         tools=[available_functions], system_instruction=system_prompt
     )
 
-    response = client.models.generate_content(
+    max_iters = 20
+    for i in range(0, max_iters):
+        response = client.models.generate_content(
         model="gemini-2.0-flash-001",
         contents=messages,
         config=config,
@@ -68,12 +70,20 @@ def main():
         print(f"Prompt tokens: {response.usage_metadata.prompt_token_count}")
         print(f"Response tokens: {response.usage_metadata.candidates_token_count}")
 
+    if response.candidates:
+        for candidate in response.candidates:
+            if candidate.content is None or candidate is None:
+                continue
+            messages.append(candidate.content)   
+
+
     if response.function_calls:
-        for function_call_part in response.function_calls:
+        for function_call_part in response.function_calls:            
             result = call_function(function_call_part, verbose_flag)
-            print(result)
+            messages.append(result)
     else:
         print(response.text)
+        return   
 
 
 main()
