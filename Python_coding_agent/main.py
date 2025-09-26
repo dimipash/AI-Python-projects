@@ -25,6 +25,9 @@ def main():
     - Write to a file (create or update)
     - Run a Python file with optional arguments
 
+    When ser asks about code project, they are referring to working directory, do you should start by looking at the project's files and figuring out how to run the project and how to run its tests, you will always test the tests,
+    and the actual project to verify that behaviour is working.
+    
     All paths you provide should be relative to the working directory. You do not need to specify the working directory in your function calls as it is automatically injected for security reasons.
     """
 
