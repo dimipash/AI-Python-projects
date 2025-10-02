@@ -1,8 +1,7 @@
 jupyter
-rav
-pre-commit
 python-dotenv
 langchain
 langchain-community
 langchain-brightdata
 langchain[google-genai]
+langgraph
