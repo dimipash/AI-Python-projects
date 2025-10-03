@@ -3,6 +3,8 @@ Celery
 django-qstash
 django-celery-results
 django-celery-beat
+dj-database-url
+psycopg[binary]
 jupyter
 python-dotenv
 langchain
