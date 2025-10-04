@@ -4,6 +4,7 @@ django-qstash
 django-celery-results
 django-celery-beat
 dj-database-url
+django-redis
 psycopg[binary]
 jupyter
 python-dotenv
@@ -12,3 +13,4 @@ langchain-community
 langchain-brightdata
 langchain[google-genai]
 langgraph
+redis

@@ -1,6 +1,6 @@
 # Reddit Scraping Pipeline
 
-This project contains a series of Jupyter notebooks that demonstrate how to build an AI-powered pipeline for discovering and analyzing Reddit communities based on given topics. It utilizes LangChain, LangGraph, and external APIs like BrightData SERP and Google Gemini to create an intelligent agent that searches the internet for relevant Reddit subreddits.
+This project contains a series of Jupyter notebooks and a Django app that demonstrate how to build an AI-powered pipeline for discovering and analyzing Reddit communities based on given topics. It utilizes LangChain, LangGraph, Django, Celery, and external APIs like BrightData SERP and Google Gemini to create an intelligent agent that searches the internet for relevant Reddit subreddits.
 
 ## Features
 
@@ -10,6 +10,8 @@ This project contains a series of Jupyter notebooks that demonstrate how to buil
 - **Structured Data Handling**: Uses Pydantic models for structured JSON outputs representing Reddit communities.
 - **Tool Calling**: Demonstrates LangChain's tool-calling capabilities for extending LLM functionality.
 - **Environment Management**: Secure handling of API keys via environment variables.
+- **Django App**: Includes a Django project for web-based or backend integration.
+- **Task Queue**: Celery is included for background task processing.
 
 ## Installation
 
@@ -22,6 +24,11 @@ This project contains a series of Jupyter notebooks that demonstrate how to buil
 2. Install dependencies:
    ```bash
    pip install -r requirements.txt
+   ```
+   If you encounter errors related to `pydantic-core` or other dependencies, ensure you have a recent version of `pip` and required build tools:
+   ```bash
+   pip install --upgrade pip setuptools wheel
+   sudo apt-get install build-essential
    ```
 
 3. Set up environment variables:
@@ -44,8 +51,26 @@ Open and run the notebooks in sequential order in Jupyter:
 6. `notebooks/6-llm-tool-calling.ipynb` - Tool calling with LangChain
 7. `notebooks/7-llm-tool-calling-easy.ipynb` - Simplified tool calling examples
 8. `notebooks/8-searching-reddit-communites-by-topic.ipynb` - Final pipeline: Search for Reddit communities by topic
+9. `notebooks/9-scraping-subreddit-threads.ipynb` - Example: Scraping subreddit threads
+10. `notebooks/10-django-hello-world.ipynb` - Django hello world example
 
 In the final notebook, you can modify the input topics and run the agent to get a list of relevant Reddit communities with details like member counts.
+
+### Django App
+
+This project includes a Django app (in `src/`). To run the Django development server:
+
+```bash
+cd src
+python manage.py migrate
+python manage.py runserver
+```
+
+Celery is included for background task processing. To start a Celery worker:
+
+```bash
+celery -A dlphome worker --loglevel=info
+```
 
 ## Requirements
 
@@ -53,7 +78,11 @@ In the final notebook, you can modify the input topics and run the agent to get 
 - Jupyter Notebook or JupyterLab
 - API keys for Google Gemini and BrightData SERP
 
-See `requirements.txt` for a complete list of Python dependencies.
+See `requirements.txt` for a complete list of Python dependencies. Notable packages:
+
+- Django, Celery, dj-database-url, psycopg[binary]
+- jupyter, python-dotenv
+- langchain, langchain-community, langchain-brightdata, langchain[google-genai], langgraph
 
 ## Project Structure
 
@@ -62,15 +91,20 @@ Reddit_scraping_pipeline/
 ├── README.md
 ├── requirements.txt
 ├── .gitignore
+├── src/
+│   ├── dlphome/  # Django app
+│   └── manage.py
 └── notebooks/
-    ├── 1-hello-world.ipynb
-    ├── 2-load-env-vars.ipynb
-    ├── 3-serp-api-langchain.ipynb
-    ├── 4-google-gemini-llm-langchain.ipynb
-    ├── 5-structured-output-with-langchain-pydantic.ipynb
-    ├── 6-llm-tool-calling.ipynb
-    ├── 7-llm-tool-calling-easy.ipynb
-    └── 8-searching-reddit-communites-by-topic.ipynb
+   ├── 1-hello-world.ipynb
+   ├── 2-load-env-vars.ipynb
+   ├── 3-serp-api-langchain.ipynb
+   ├── 4-google-gemini-llm-langchain.ipynb
+   ├── 5-structured-output-with-langchain-pydantic.ipynb
+   ├── 6-llm-tool-calling.ipynb
+   ├── 7-llm-tool-calling-easy.ipynb
+   ├── 8-searching-reddit-communites-by-topic.ipynb
+   ├── 9-scraping-subreddit-threads.ipynb
+   └── 10-django-hello-world.ipynb
 ```
 
 ## Technologies Used
@@ -82,10 +116,12 @@ Reddit_scraping_pipeline/
 - Pydantic: For data validation and structured outputs
 - Python-dotenv: For environment variable management
 - Jupyter: For interactive notebook development
+- Django: For web application and backend
+- Celery: For background task processing
 
 ## Contributing
 
-This is an educational project demonstrating AI pipeline techniques. Feel free to fork and experiment with the code.
+This is an educational project demonstrating AI pipeline techniques. Feel free to fork and experiment with the code. If you encounter issues with dependency installation, please check your Python version and ensure all build tools are installed.
 
 ## License
 
