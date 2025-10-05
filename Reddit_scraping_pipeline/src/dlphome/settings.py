@@ -18,9 +18,11 @@ SECRET_KEY = os.environ.get("DJANGO_SECRET_KEY")
 DEBUG = str(os.environ.get("DJANGO_DEBUG")) == "1"
 
 ALLOWED_HOSTS = []
+CSRF_TRUSTED_ORIGINS = []
 
 if DEBUG:
-    ALLOWED_HOSTS.append("*")
+    ALLOWED_HOSTS.append(".pashev-dev.bg")
+    CSRF_TRUSTED_ORIGINS.append("https://*.pashev-dev.bg")
 
 
 # Application definition
