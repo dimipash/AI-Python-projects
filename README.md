@@ -41,6 +41,26 @@ Below is a brief overview of the projects included in this repository:
 *   **Description:** An AI agent project utilizing Langgraph to build stateful, multi-actor applications with large language models.
 *   **Key Technologies:** Python, Langgraph, LangChain.
 
+### 8. Langflow Web Agent (`langflow_web_agent/`)
+
+*   **Description:** A powerful web scraping and data extraction tool built with Langflow, leveraging Bright Data's Web Unlocker and Dataset APIs to provide intelligent web data collection capabilities.
+*   **Key Technologies:** Python, Langflow, Bright Data.
+
+### 9. Python Coding Agent (`Python_coding_agent/`)
+
+*   **Description:** A command-line tool that leverages Google's Gemini AI to act as an intelligent coding agent. It can perform file operations (list, read, write) and execute Python scripts based on natural language prompts.
+*   **Key Technologies:** Python, Google Gemini API.
+
+### 10. RAG Production App (`RAG_production_app/`)
+
+*   **Description:** This is a Retrieval-Augmented Generation (RAG) application built with FastAPI and Inngest.
+*   **Key Technologies:** Python, FastAPI, Inngest.
+
+### 11. Reddit Scraping Pipeline (`Reddit_scraping_pipeline/`)
+
+*   **Description:** This project contains a series of Jupyter notebooks and a Django app that demonstrate how to build an AI-powered pipeline for discovering and analyzing Reddit communities based on given topics.
+*   **Key Technologies:** Python, LangChain, LangGraph, Django, Celery, BrightData SERP, Google Gemini.
+
 ## Getting Started
 
 Each project directory contains its own `README.md` file (or relevant setup information in its code) with specific instructions for setup, dependencies, and usage. Please refer to the individual project directories for more details.
