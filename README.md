@@ -29,6 +29,7 @@ Each project is contained in its own directory, and includes a `README.md` with 
 |-- /Python_coding_agent
 |-- /RAG_production_app
 |-- /Reddit_scraping_pipeline
+|-- /simple_AI_agent
 |-- README.md
 ```
 
@@ -57,6 +58,7 @@ The projects in this repository utilize a variety of modern technologies, includ
 *   [Python Coding Agent (`Python_coding_agent/`)](#python-coding-agent-python_coding_agent)
 *   [RAG Production App (`RAG_production_app/`)](#rag-production-app-rag_production_app)
 *   [Reddit Scraping Pipeline (`Reddit_scraping_pipeline/`)](#reddit-scraping-pipeline-reddit_scraping_pipeline)
+*   [Simple AI Agent (`simple_AI_agent/`)](#simple-ai-agent-simple_ai_agent)
 
 Below is a brief overview of the projects included in this repository:
 
@@ -119,6 +121,11 @@ Below is a brief overview of the projects included in this repository:
 
 *   **Description:** This project contains a series of Jupyter notebooks and a Django app that demonstrate how to build an AI-powered pipeline for discovering and analyzing Reddit communities based on given topics.
 *   **Key Technologies:** Python, LangChain, LangGraph, Django, Celery, BrightData SERP, Google Gemini.
+
+### Simple AI Agent (`simple_AI_agent/`)
+
+*   **Description:** DataGen Agent is a sophisticated, command-line-driven AI agent designed to generate realistic, synthetic user data based on natural language instructions. Built with Python, LangChain, and OpenAI, it provides a conversational interface for creating and managing sample datasets effortlessly.
+*   **Key Technologies:** Python, LangChain, LangGraph, OpenAI.
 
 ## Getting Started
 
