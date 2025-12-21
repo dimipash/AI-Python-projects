@@ -5,7 +5,7 @@ WORKDIR /app
 # RUN mkdir -p /static_folder
 # COPY ./static_html /static_folder
 
-COPY ./static_html .
+COPY ./src .
 
 # RUN echo "Hello, World!" > index.html
 
