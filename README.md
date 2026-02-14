@@ -6,7 +6,7 @@ This repository contains a collection of small to medium-sized projects focused 
 
 ## Key Features
 
-*   **Diverse AI Applications:** Explore a wide range of AI use cases, from web scraping and research to voice assistants and coding mentors.
+*   **Diverse AI Applications:** Explore a wide range of AI use cases, from web scraping and research to voice assistants, coding mentors, and data analysis.
 *   **Modern Technologies:** Each project utilizes current and relevant Python libraries and frameworks, including LangChain, FastAPI, Streamlit, and more.
 *   **Modular and Understandable:** The projects are structured to be clear, modular, and easy to understand, making them great for learning and experimentation.
 *   **Practical Examples:** Get hands-on with practical examples that you can adapt and build upon for your own AI projects.
@@ -20,6 +20,7 @@ Each project is contained in its own directory, and includes a `README.md` with 
 |-- /AI_agent_research
 |-- /AI_agent_voice_assistant
 |-- /AI_coding_mentor
+|-- /AI_data_analyst
 |-- /AI_scraper_agent
 |-- /AI_voice_assistant
 |-- /ChatGPT_Apps_sdk
@@ -49,6 +50,7 @@ The projects in this repository utilize a variety of modern technologies, includ
 *   [AI Agent Research (`AI_agent_research/`)](#ai-agent-research-ai_agent_research)
 *   [AI Agent Voice Assistant (`AI_agent_voice_assistant/`)](#ai-agent-voice-assistant-ai_agent_voice_assistant)
 *   [AI Coding Mentor (`AI_coding_mentor/`)](#ai-coding-mentor-ai_coding_mentor)
+*   [AI Data Analyst (`AI_data_analyst/`)](#ai-data-analyst-ai_data_analyst)
 *   [AI Scraper Agent (`AI_scraper_agent/`)](#ai-scraper-agent-ai_scraper_agent)
 *   [AI Voice Assistant (`AI_voice_assistant/`)](#ai-voice-assistant-ai_voice_assistant)
 *   [ChatGPT Apps SDK (`ChatGPT_Apps_sdk/`)](#chatgpt-apps-sdk-chatgpt_apps_sdk)
@@ -76,6 +78,11 @@ Below is a brief overview of the projects included in this repository:
 
 *   **Description:** An interactive AI-powered learning platform designed to help users master coding concepts. It offers structured learning roadmaps, interactive quizzes, a searchable resource library (using vector search), and an AI chat assistant integrated via the Parlant platform.
 *   **Key Technologies:** Python, Streamlit, MongoDB, Pymongo, Sentence Transformers, Pydantic, Parlant SDK.
+
+### AI Data Analyst (`AI_data_analyst/`)
+
+*   **Description:** A CLI tool for data analysis with natural language queries. Load CSV/Excel files, generate statistics, visualizations, and ask questions about your data using OpenAI GPT.
+*   **Key Technologies:** Python, pandas, matplotlib, seaborn, OpenAI API, Click.
 
 ### AI Scraper Agent (`AI_scraper_agent/`)
 

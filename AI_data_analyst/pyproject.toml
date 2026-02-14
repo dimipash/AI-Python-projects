@@ -1,0 +1,23 @@
+[project]
+name = "ai-data-analyst"
+version = "0.1.0"
+description = "AI-powered data analysis tool with natural language queries"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "click>=8.1.0",
+    "pandas>=2.0.0",
+    "matplotlib>=3.8.0",
+    "seaborn>=0.13.0",
+    "openai>=1.0.0",
+    "python-dotenv>=1.0.0",
+    "openpyxl>=3.1.0",
+    "pyarrow>=14.0.0",
+]
+
+[project.scripts]
+ai-analyst = "main:cli"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
