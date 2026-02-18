@@ -21,7 +21,7 @@ This project is a simple demonstration of a Voice AI agent, utilizing Flask for 
 
 ### Backend
 
-1.  Navigate to the project's root directory (`d:/GitHub/AI-Python-projects/AI_agent_voice_assistant`).
+1.  Navigate to the project's root directory (`ai_agent_voice_assistant`).
 2.  Create a virtual environment:
     ```bash
     python -m venv venv

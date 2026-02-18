@@ -18,7 +18,7 @@ This project contains a series of Jupyter notebooks and a Django app that demons
 1. Clone the repository:
    ```bash
    git clone https://github.com/dimipash/AI-Python-projects.git
-   cd Reddit_scraping_pipeline
+   cd reddit_scraping_pipeline
    ```
 
 2. Install dependencies:
@@ -87,7 +87,7 @@ See `requirements.txt` for a complete list of Python dependencies. Notable packa
 ## Project Structure
 
 ```
-Reddit_scraping_pipeline/
+reddit_scraping_pipeline/
 ├── README.md
 ├── requirements.txt
 ├── .gitignore

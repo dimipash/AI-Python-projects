@@ -17,7 +17,7 @@ Requires Python >= 3.13.
 1. Clone the repository:
    ```bash
    git clone https://github.com/dimipash/AI-Python-projects.git
-   cd Python_coding_agent
+   cd python_coding_agent
    ```
 
 2. Install dependencies:

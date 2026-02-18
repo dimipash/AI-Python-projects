@@ -17,20 +17,20 @@ Each project is contained in its own directory, and includes a `README.md` with 
 
 ```
 /AI-Python-projects
-|-- /AI_agent_research
-|-- /AI_agent_voice_assistant
-|-- /AI_coding_mentor
-|-- /AI_data_analyst
-|-- /AI_scraper_agent
-|-- /AI_voice_assistant
-|-- /ChatGPT_Apps_sdk
+|-- /ai_agent_research
+|-- /ai_agent_voice_assistant
+|-- /ai_coding_mentor
+|-- /ai_data_analyst
+|-- /ai_scraper_agent
+|-- /ai_voice_assistant
+|-- /chatgpt_apps_sdk
 |-- /custom_mcp_server
 |-- /langflow_web_agent
 |-- /langgraph_agent
-|-- /Python_coding_agent
-|-- /RAG_production_app
-|-- /Reddit_scraping_pipeline
-|-- /simple_AI_agent
+|-- /python_coding_agent
+|-- /rag_production_app
+|-- /reddit_scraping_pipeline
+|-- /simple_ai_agent
 |-- README.md
 ```
 
@@ -47,54 +47,54 @@ The projects in this repository utilize a variety of modern technologies, includ
 
 ## Projects
 
-*   [AI Agent Research (`AI_agent_research/`)](#ai-agent-research-ai_agent_research)
-*   [AI Agent Voice Assistant (`AI_agent_voice_assistant/`)](#ai-agent-voice-assistant-ai_agent_voice_assistant)
-*   [AI Coding Mentor (`AI_coding_mentor/`)](#ai-coding-mentor-ai_coding_mentor)
-*   [AI Data Analyst (`AI_data_analyst/`)](#ai-data-analyst-ai_data_analyst)
-*   [AI Scraper Agent (`AI_scraper_agent/`)](#ai-scraper-agent-ai_scraper_agent)
-*   [AI Voice Assistant (`AI_voice_assistant/`)](#ai-voice-assistant-ai_voice_assistant)
-*   [ChatGPT Apps SDK (`ChatGPT_Apps_sdk/`)](#chatgpt-apps-sdk-chatgpt_apps_sdk)
+*   [AI Agent Research (`ai_agent_research/`)](#ai-agent-research-ai_agent_research)
+*   [AI Agent Voice Assistant (`ai_agent_voice_assistant/`)](#ai-agent-voice-assistant-ai_agent_voice_assistant)
+*   [AI Coding Mentor (`ai_coding_mentor/`)](#ai-coding-mentor-ai_coding_mentor)
+*   [AI Data Analyst (`ai_data_analyst/`)](#ai-data-analyst-ai_data_analyst)
+*   [AI Scraper Agent (`ai_scraper_agent/`)](#ai-scraper-agent-ai_scraper_agent)
+*   [AI Voice Assistant (`ai_voice_assistant/`)](#ai-voice-assistant-ai_voice_assistant)
+*   [ChatGPT Apps SDK (`chatgpt_apps_sdk/`)](#chatgpt-apps-sdk-chatgpt_apps_sdk)
 *   [Custom MCP Server (`custom_mcp_server/`)](#custom-mcp-server-custom_mcp_server)
 *   [Langflow Web Agent (`langflow_web_agent/`)](#langflow-web-agent-langflow_web_agent)
 *   [Langgraph Agent (`langgraph_agent/`)](#langgraph-agent-langgraph_agent)
-*   [Python Coding Agent (`Python_coding_agent/`)](#python-coding-agent-python_coding_agent)
-*   [RAG Production App (`RAG_production_app/`)](#rag-production-app-rag_production_app)
-*   [Reddit Scraping Pipeline (`Reddit_scraping_pipeline/`)](#reddit-scraping-pipeline-reddit_scraping_pipeline)
-*   [Simple AI Agent (`simple_AI_agent/`)](#simple-ai-agent-simple_ai_agent)
+*   [Python Coding Agent (`python_coding_agent/`)](#python-coding-agent-python_coding_agent)
+*   [RAG Production App (`rag_production_app/`)](#rag-production-app-rag_production_app)
+*   [Reddit Scraping Pipeline (`reddit_scraping_pipeline/`)](#reddit-scraping-pipeline-reddit_scraping_pipeline)
+*   [Simple AI Agent (`simple_ai_agent/`)](#simple-ai-agent-simple_ai_agent)
 
 Below is a brief overview of the projects included in this repository:
 
-### AI Agent Research (`AI_agent_research/`)
+### AI Agent Research (`ai_agent_research/`)
 
 *   **Description:** A research assistant agent built with LangChain. It takes a user query, utilizes tools like web search (Tavily) and Wikipedia, and generates a research summary with sources. It supports different LLMs (Claude, GPT) and saves the output.
 *   **Key Technologies:** Python, LangChain, Langchain-OpenAI, Langchain-Anthropic, Tavily Search, Wikipedia, Pydantic.
 
-### AI Agent Voice Assistant (`AI_agent_voice_assistant/`)
+### AI Agent Voice Assistant (`ai_agent_voice_assistant/`)
 
 *   **Description:** A demonstration of a Voice AI agent capable of handling voice calls. It features a simple backend API for tasks like order retrieval and integrates with Vapi.ai for voice functionality.
 *   **Key Technologies:** Python, Flask (Backend), React, Vite, @vapi-ai/web (Frontend).
 
-### AI Coding Mentor (`AI_coding_mentor/`)
+### AI Coding Mentor (`ai_coding_mentor/`)
 
 *   **Description:** An interactive AI-powered learning platform designed to help users master coding concepts. It offers structured learning roadmaps, interactive quizzes, a searchable resource library (using vector search), and an AI chat assistant integrated via the Parlant platform.
 *   **Key Technologies:** Python, Streamlit, MongoDB, Pymongo, Sentence Transformers, Pydantic, Parlant SDK.
 
-### AI Data Analyst (`AI_data_analyst/`)
+### AI Data Analyst (`ai_data_analyst/`)
 
 *   **Description:** A CLI tool for data analysis with natural language queries. Load CSV/Excel files, generate statistics, visualizations, and ask questions about your data using OpenAI GPT.
 *   **Key Technologies:** Python, pandas, matplotlib, seaborn, OpenAI API, Click.
 
-### AI Scraper Agent (`AI_scraper_agent/`)
+### AI Scraper Agent (`ai_scraper_agent/`)
 
 *   **Description:** An AI agent designed to scrape web data, specifically demonstrated by extracting the latest posts from a specified Instagram profile using browser automation.
 *   **Key Technologies:** Python, Langchain-Anthropic, browser-use (Playwright), Pydantic.
 
-### AI Voice Assistant (`AI_voice_assistant/`)
+### AI Voice Assistant (`ai_voice_assistant/`)
 
 *   **Description:** A general-purpose AI voice assistant application. It includes a backend for real-time audio processing, speech-to-text, and natural language understanding (using OpenAI), and a frontend for user interaction.
 *   **Key Technologies:** Python, Flask (Backend), OpenAI API, React, Vite (Frontend).
 
-### ChatGPT Apps SDK (`ChatGPT_Apps_sdk/`)
+### ChatGPT Apps SDK (`chatgpt_apps_sdk/`)
 
 *   **Description:** This project is a Python-based web service that demonstrates the use of the FastMCP library to create a tool-use MCP (Multi-turn Conversation Protocol) application. The project also includes a FastAPI web application that exposes both regular API endpoints and the MCP application.
 *   **Key Technologies:** Python, FastAPI, FastMCP, Uvicorn, Rav.
@@ -114,22 +114,22 @@ Below is a brief overview of the projects included in this repository:
 *   **Description:** An AI agent project utilizing Langgraph to build stateful, multi-actor applications with large language models.
 *   **Key Technologies:** Python, Langgraph, LangChain.
 
-### Python Coding Agent (`Python_coding_agent/`)
+### Python Coding Agent (`python_coding_agent/`)
 
 *   **Description:** A command-line tool that leverages Google's Gemini AI to act as an intelligent coding agent. It can perform file operations (list, read, write) and execute Python scripts based on natural language prompts.
 *   **Key Technologies:** Python, Google Gemini API.
 
-### RAG Production App (`RAG_production_app/`)
+### RAG Production App (`rag_production_app/`)
 
 *   **Description:** This is a Retrieval-Augmented Generation (RAG) application built with FastAPI and Inngest.
 *   **Key Technologies:** Python, FastAPI, Inngest.
 
-### Reddit Scraping Pipeline (`Reddit_scraping_pipeline/`)
+### Reddit Scraping Pipeline (`reddit_scraping_pipeline/`)
 
 *   **Description:** This project contains a series of Jupyter notebooks and a Django app that demonstrate how to build an AI-powered pipeline for discovering and analyzing Reddit communities based on given topics.
 *   **Key Technologies:** Python, LangChain, LangGraph, Django, Celery, BrightData SERP, Google Gemini.
 
-### Simple AI Agent (`simple_AI_agent/`)
+### Simple AI Agent (`simple_ai_agent/`)
 
 *   **Description:** DataGen Agent is a sophisticated, command-line-driven AI agent designed to generate realistic, synthetic user data based on natural language instructions. Built with Python, LangChain, and OpenAI, it provides a conversational interface for creating and managing sample datasets effortlessly.
 *   **Key Technologies:** Python, LangChain, LangGraph, OpenAI.

@@ -48,7 +48,7 @@
 
 ## Project Structure
 ```
-AI_data_analyst/
+ai_data_analyst/
 ├── pyproject.toml
 ├── main.py
 ├── .env.example
